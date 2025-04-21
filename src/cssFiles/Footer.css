@@ -1,0 +1,125 @@
+.footer {
+  width: 100%;
+  background-color: #3a3a3d;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.footerMainContainer {
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.box1, .box2, .box3 {
+  width: 300px;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.box1 h2 {
+  font-size: 32px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.box1 h2 span {
+  color: orangered;
+}
+.box1 p {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.icons {
+  display: flex;
+  gap: 20px;
+}
+.icons i {
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.box2 h3,
+.box3 h3 {
+  color: orangered;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.box2 a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  margin: 4px 0;
+}
+
+.address, .email, .call {
+  display: flex;
+  align-items: flex-start;
+}
+
+.address i,
+.email i,
+.call i {
+  color: orangered;
+  font-size: 20px;
+  padding: 10px 10px 0 0;
+}
+
+.address p,
+.email p,
+.call p {
+  color: #ffffff;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+  .footerMainContainer {
+    justify-content: center;
+  }
+
+  .box1, .box2, .box3 {
+    width: 100%;
+    max-width: 500px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .box2 a {
+    font-size: 16px;
+  }
+
+  .address, .email, .call {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .box1 h2 {
+    font-size: 26px;
+  }
+
+  .box1 p,
+  .address p,
+  .email p,
+  .call p {
+    font-size: 13px;
+  }
+
+  .box2 h3,
+  .box3 h3 {
+    font-size: 18px;
+  }
+
+  .box2 a {
+    font-size: 14px;
+  }
+}

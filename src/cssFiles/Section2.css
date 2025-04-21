@@ -1,0 +1,154 @@
+.section2 {
+  width: 100%;
+  background-color: #eeefe7;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.containerSection2 {
+  width: 90%;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section2Image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 30px;
+  flex-shrink: 0;
+}
+
+.textContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 280px;
+}
+
+.headerSection2 {
+  font-size: 42px;
+  font-weight: 600;
+  font-family: Merriweather, sans-serif;
+  margin: 0;
+}
+
+.paraSection2 {
+  font-size: 16px;
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.flexBoxContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.flexContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 120px;
+  min-width: 120px;
+  max-width: 180px;
+  transition: transform 0.3s ease;
+}
+
+.flexContainer:hover {
+  transform: scale(1.08);
+}
+
+.percent {
+  margin-bottom: 8px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  color: #ccff8b;
+  background-color: black;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .containerSection2 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .textContainer {
+    align-items: center;
+  }
+
+  .headerSection2 {
+    font-size: 36px;
+  }
+
+  .paraSection2 {
+    width: 100%;
+  }
+
+  .flexBoxContainer {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .headerSection2 {
+    font-size: 30px;
+  }
+
+  .paraSection2 {
+    font-size: 14px;
+  }
+
+  .percent {
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+  }
+
+  .flexContainer h2 {
+    font-size: 20px;
+  }
+
+  .flexContainer p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .headerSection2 {
+    font-size: 24px;
+  }
+
+  .percent {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .flexContainer h2 {
+    font-size: 18px;
+  }
+
+  .flexContainer p {
+    font-size: 13px;
+  }
+
+  .flexBoxContainer {
+    gap: 20px;
+  }
+}

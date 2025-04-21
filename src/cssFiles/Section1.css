@@ -1,0 +1,104 @@
+:root {
+  --text-light-font-family: Inter, sans-serif;
+  --text-bold-font-family: Merriweather, sans-serif;
+  --btn-background-color: #ccff8b;
+}
+
+.section1 {
+  height: 650px;
+  width: 100%;
+  /* background-color: #162d3c; */
+  background-image: url("../assets/blured.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.headerOfSection {
+  font-size: 56px;
+  font-style: 600;
+  font-family: var(--text-bold-font-family);
+  color: #ffffff;
+}
+.headerOfSection span {
+  margin-left: 65px;
+}
+.paraOfSection {
+  font-size: 16px;
+  color: #ffffff;
+  font-family: var(--text-light-font-family);
+}
+.btnServices {
+  width: 210px;
+  height: 60px;
+  font-size: 18px;
+  border-radius: 30px;
+  background-color: var(--btn-background-color);
+  margin-top: 20px;
+  font-family: var(--text-light-font-family);
+}
+.btnServices i {
+  margin-left: 4px;
+}
+.btnServices:hover {
+  animation: fadeIn 0.5s none;
+  cursor: pointer;
+}
+@media (max-width: 1024px) {
+  .headerOfSection {
+    font-size: 42px;
+    text-align: center;
+  }
+
+  .headerOfSection span {
+    margin-left: 0;
+    display: block;
+  }
+
+  .paraOfSection {
+    font-size: 15px;
+    text-align: center;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section1 {
+    height: auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .headerOfSection {
+    font-size: 32px;
+  }
+
+  .paraOfSection {
+    font-size: 14px;
+  }
+
+  .btnServices {
+    width: 180px;
+    height: 50px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .headerOfSection {
+    font-size: 28px;
+  }
+
+  .paraOfSection {
+    font-size: 13px;
+  }
+
+  .btnServices {
+    width: 160px;
+    height: 45px;
+    font-size: 15px;
+  }
+}
