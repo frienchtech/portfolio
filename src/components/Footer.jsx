@@ -24,10 +24,10 @@ function Footer() {
           </div>
           <div className="box2">
             <h3>EXPLORE</h3>
-            <a href="#">Core Values</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms & Conditions</a>
-            <a href="#">Contact</a>
+            <a href="https://frienchtech.com/core-values.html">Core Values</a>
+            <a href="https://frienchtech.com/privacy_policy.html">Privacy Policy</a>
+            <a href="https://frienchtech.com/terms-and-conditions.html">Terms & Conditions</a>
+            <a href="https://frienchtech.com/contact.html">Contact</a>
           </div>
           <div className="box3">
             <h3>CONTACT</h3>
